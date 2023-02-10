@@ -1,4 +1,4 @@
-<img alt="Airbnb" src='https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230210%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230210T001329Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c7ae9503f968edfeaf3609a97c68eeec8f9fe7da02621aa5f308c8bf07bc18e5'
+![image](https://user-images.githubusercontent.com/97067717/217969980-27530bd2-55af-4c76-87d2-6aa8b44f519c.png)
 
 The goal of the project was to deploy a recreation of the AirBnB website.
 Learning Objectives :
@@ -23,7 +23,7 @@ What is **kwargs and how to use it
 How to handle named arguments in a function
 
 The console
-<img alt 'air' src='https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230210%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230210T001329Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c2c8bdbb5b97bcaa23cd0e92cbdaa4daeb47e70d07effb537a7d211308120bc1'
+![image](https://user-images.githubusercontent.com/97067717/217969897-bf508e07-c3d9-4011-aa4f-84539ba9d900.png)
 
 Requirements
 
