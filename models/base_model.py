@@ -1,5 +1,5 @@
 #!/usr/bin/python3
- """ BaseModel Module """
+""" BaseModel Module """
 
 
 from uuid import uuid4
