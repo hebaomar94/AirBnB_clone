@@ -19,12 +19,22 @@ class BaseModel:
                         of __dict__ of the instance
     """
 
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         """defines all common attributes/methods for other classes
         """
-        self.id = str(uuid4())
-        self.created_at = datetime.now().isoformat()
-        self.updated_at = datetime.now().isoformat()
+        if kwargs:
+            for key in kwargs:
+                if key == '__class__':
+                    continue
+                if key in ('created_at', 'updated_at'):
+                    self.__setattr__(key, datetime.fromisoformat(kwargs[key]))
+                else:
+                    self.__setattr__(key, kwargs[key])
+                print(f"key {key} value {kwargs[key]}")
+        else:
+            self.id = str(uuid4())
+            self.created_at = datetime.now()
+            self.updated_at = datetime.now()
 
     def __str__(self):
         """should print: [<class name>] (<self.id>) <self.__dict__>"""
@@ -32,12 +42,16 @@ class BaseModel:
 
     def save(self):
         """ updates the current datetime"""
-        self.updated_at = datetime.now().isoformat()
+        self.updated_at = datetime.now()
 
     def to_dict(self):
         """returns a dictionary containing all keys/values
         of __dict__ of the instance
         """
+        print(f"------before-> \n{self.__dict__}")
         dict = {'__class__': self.__class__.__name__}
         dict.update(self.__dict__)
+        dict['created_at'] = dict['created_at'].isoformat()
+        dict['updated_at'] = dict['updated_at'].isoformat()
+        print(f"------after-> \n{self.__dict__}")
         return dict
