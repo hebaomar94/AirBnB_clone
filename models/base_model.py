@@ -30,7 +30,6 @@ class BaseModel:
                     self.__setattr__(key, datetime.fromisoformat(kwargs[key]))
                 else:
                     self.__setattr__(key, kwargs[key])
-                print(f"key {key} value {kwargs[key]}")
         else:
             self.id = str(uuid4())
             self.created_at = datetime.now()
@@ -48,10 +47,8 @@ class BaseModel:
         """returns a dictionary containing all keys/values
         of __dict__ of the instance
         """
-        print(f"------before-> \n{self.__dict__}")
         dict = {'__class__': self.__class__.__name__}
         dict.update(self.__dict__)
         dict['created_at'] = dict['created_at'].isoformat()
         dict['updated_at'] = dict['updated_at'].isoformat()
-        print(f"------after-> \n{self.__dict__}")
         return dict
