@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
-"""Defines the HBnB console."""
-
+""" Holberton AirBnB Console """
 import cmd
 import sys
 import json
@@ -15,16 +13,13 @@ from models.city import City
 from models.amenity import Amenity
 from models.review import Review
 
-
 class HBNBCommand(cmd.Cmd):
-    """Defines the HolbertonBnB command interprete
-    Attributes:
-    prompt (str): The command prompt.
-    """
-    prompt = "(hbnb) "
-    __classes = {'BaseModel': BaseModel, 'User': User, 'City': City,
+    """ General Class for HBNBCommand """
+    prompt = '(hbnb) '
+    classes = {'BaseModel': BaseModel, 'User': User, 'City': City,
                'Place': Place, 'Amenity': Amenity, 'Review': Review,
                'State': State}
+
     def do_quit(self, arg):
         """ Exit method for quit typing """
         exit()
@@ -32,18 +27,18 @@ class HBNBCommand(cmd.Cmd):
     def do_EOF(self, arg):
         """ Exit method for EOF """
         print('')
-        exit()	
+        exit()
+
     def emptyline(self):
-        """Do nothing upon receiving an empty line."""
+        """ Method to pass when emptyline entered """
         pass
 
-def do_create(self, arg):
+    def do_create(self, arg):
         """ Create a new instance """
         if len(arg) == 0:
             print('** class name missing **')
             return
-
-      new = None
+        new = None
         if arg:
             arg_list = arg.split()
             if len(arg_list) == 1:
@@ -54,7 +49,7 @@ def do_create(self, arg):
                 else:
                     print("** class doesn't exist **")
 
-def do_show(self, arg):
+    def do_show(self, arg):
         """ Method to print instance """
         if len(arg) == 0:
             print('** class name missing **')
