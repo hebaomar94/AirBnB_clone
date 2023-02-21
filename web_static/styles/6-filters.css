@@ -1,0 +1,286 @@
+.filters {
+	background-color: #FFFFFF;
+	        
+	height: 100%;
+		    
+	width: 100%;
+		        
+	border-right: 1px solid #DDDDDD;
+			    
+	border-radius: 4px;
+			        
+	display: flex;
+				    
+	align-items: center;
+			    
+}
+			      
+			    
+.filters div {
+				        
+	height: 100%;
+					    
+	width: 25%;
+					        
+	display: flex;
+						    
+	align-items: center;
+						        
+	position: relative;
+						
+}
+
+						
+.filters div:not(:first-child) {
+							    
+	border-left: 1px solid #DDDDDD;
+						    
+}
+
+						    
+.filters h3 {
+							        
+	font-weight: 600;
+								    
+	font-size: 16px;
+								        
+	margin: 0;
+									    
+	margin-bottom: 4px;
+								    
+}
+
+								    
+.filters h4 {
+									        
+	font-weight: 400;
+										    
+	font-size: 14px;
+										        
+	margin: 0;
+										
+}
+
+										
+.filters ul.popover {
+											    
+	position: absolute;
+											        
+	display: none;
+												    
+	list-style: none;
+												        
+	padding: 0;
+													    
+	margin: 0;
+													        
+	background-color: #FAFAFA;
+														    
+	border: 1px solid #DDDDDD;
+														        
+	border-radius: 4px;
+															    
+	color: #333333;
+															        
+	width: 100%;
+															
+}
+
+															
+.filters div:hover ul.popover {
+																    
+	display: block;
+															    
+}
+
+															   
+.filters ul.popover li {
+																        
+	padding: 10px;
+																	    
+	border-bottom: 1px solid #DDDDDD;
+																    
+}
+
+																    
+.filters ul.popover li:last-child {
+																	        
+	border-bottom: none;
+																	
+}
+
+																	
+.filters ul.popover a {
+																		    
+	color: #333333;
+																		        
+	text-decoration: none;
+																		
+}
+
+																		
+.filters ul.popover a:hover {
+																			    
+	text-decoration: underline;
+																		    
+}
+
+																		    
+.amenities ul.popover {
+																			       
+       	top: 100%;
+																				    
+	left: 0;
+																				        
+	z-index: 10;
+																				
+}
+
+																				
+.amenities ul:hover {
+																					    
+	display: block;
+																				    
+}
+
+																				    
+.amenities ul li:hover > ul {
+																					        
+	display: block;
+																					
+}
+
+																					
+.locations h2 {
+																						    
+	font-size: 16px;
+																						        
+	margin: 0;
+																							    
+	margin-bottom: 4px;
+																						    
+}
+
+																						    
+.locations ul.popover {
+																							        
+	top: 100%;
+																								    
+	left: 0;
+																								        
+	z-index: 10;
+																								
+}
+
+																								
+.locations ul.popover ul.popover {
+																									    
+	left: 100%;
+																									        
+	top: 0;
+																									
+}
+
+																									
+.locations, .amenities {
+																										    
+	width: 25%;
+																										        
+	height: 100%;
+																										
+}
+
+																										
+.locations {
+																											    
+	border-right: none;
+																										    
+}
+
+																										    
+.locations ul, .amenities ul {
+																											        
+	display: none;
+																												    
+	list-style: none;
+																												        
+	padding: 0;
+																													    
+	margin: 0;
+																													        
+	background-color: #FAFAFA;
+																														    
+	border: 1px solid #DDDDDD;
+																														        
+	border-radius: 4px;
+																															    
+	width: 100%;
+																															        
+	position: absolute;
+																																    
+	z-index: 1;
+																															    
+}
+
+																															    
+.locations ul li {
+																																        
+	padding: 10px;
+																																	    
+	border-bottom: 1px solid #DDDDDD;
+																																    
+}
+
+																																    
+.locations ul li:last-child {
+																																	        
+	border-bottom: none;
+																																	
+}
+
+																																	
+.locations ul ul {
+																																		    
+	display: none;
+																																		        
+	position: absolute;
+																																			    
+	left: 100%;
+																																			        
+	top: 0;
+																																				    
+	border-radius: 4px;
+																																				        
+	border: 1px solid #DDDDDD;
+																																				
+}
+
+																																				
+.locations ul ul li {
+																																					    
+	padding: 10px;
+																																					        
+	border-bottom: 1px solid #DDDDDD;
+																																					
+}
+
+																																					
+.locations ul ul li:last-child {
+																																						    
+	border-bottom: none;
+																																					    
+}
+
+																																					    
+.locations:hover ul {
+																																						        
+	display: block;
+																																						
+}
+
+																																						
+.locations ul li:hover > ul {
+																																							    
+	display: block;
+																																						    
+}
