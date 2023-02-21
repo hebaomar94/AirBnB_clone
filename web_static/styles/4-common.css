@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+			
+	padding: 0;
+				
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+					
+	font-size: 16px;
+						
+	color: #484848;
+							
+	background-color: #f2f2f2;
+						
+}
+
+						
+.container {
+								
+	max-width: 1000px;
+									
+	margin: 30px auto;
+										
+	padding: 20px;
+									
+}
+
+									
+button {
+											
+	border: none;
+												
+	background-color: #FF5A5F;
+													
+	color: white;
+														
+	padding: 10px 20px;
+															
+	font-size: 16px;																
+	border-radius: 4px;
+																	
+	cursor: pointer;
+																
+}
+button:hover {
+																		
+	background-color: #FF787D;
+																	
+}
